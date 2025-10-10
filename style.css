@@ -101,6 +101,7 @@ span.contact-info {
     padding: 2vh 4vw;
     background-color: rgb(246, 253, 225);
     border-radius: 15px 0px 0px 0px;
+    min-height: 90vh;
 }
 
 .project-card {
@@ -124,7 +125,8 @@ span.contact-info {
 
 .project-card .description h2 {
     font-size: 2em;
-    color: rgb(255, 69, 69);
+    color: rgb(1, 1, 26);
+    text-decoration: underline;
 }
 
 .project-card .description p {
@@ -151,4 +153,3 @@ span.contact-info {
     display: flex;
     justify-content: space-around;
 }
-
