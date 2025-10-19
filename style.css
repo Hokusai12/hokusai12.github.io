@@ -3,14 +3,28 @@
     src: url("fonts/Garet-Book.ttf");
 }
 
+@font-face {
+    font-family: geoform;
+    src: url("fonts/Geoform-Medium.otf");
+}
+
+:root {
+    --dark-blue: rgb(3, 5, 61);
+    --cream: rgb(245, 250, 229);
+}
+
 body {
     margin: 0;
     padding: 0;
     width: 100%;
     height: auto;
-    background-color: rgb(1, 2, 26);
-    color: rgb(0, 2, 75);
+    background-color: var(--dark-blue);
+    color: var(--dark-blue);
     font-family: garet;
+}
+
+h1, h2, h3 {
+    font-family: geoform;
 }
 
 aside {
@@ -22,8 +36,8 @@ aside {
     padding: 1%;
     margin: 0;
 
-    color: rgb(246, 253, 225);
-    background-color: rgb(1, 2, 26)
+    color: var(--cream);
+    background-color: var(--dark-blue);
 }
 
 #aside-content {
@@ -35,10 +49,16 @@ aside {
 }
 
 #aside-content h2 {
-    color: rgb(246, 253, 225);
-    text-align: right;
+    color: var(--cream);
+    text-align: center;
     font-size: 1.8em;
 }
+
+ #aside-content p {
+    color: var(--cream);
+    text-align: center;
+    font-size: 1em;
+ }
 
 #headshot {
     width: 50%;
@@ -99,7 +119,7 @@ span.contact-info {
     margin-left: 18vw;
     margin-top: 8vh;
     padding: 2vh 4vw;
-    background-color: rgb(246, 253, 225);
+    background-color: var(--cream);
     border-radius: 15px 0px 0px 0px;
     min-height: 90vh;
 }
@@ -112,10 +132,10 @@ span.contact-info {
 
     display: grid;
 
-    border: rgb(1, 2, 26) solid 0.125em;
+    border: var(--dark-blue) solid 0.125em;
     border-radius: 15px;
-    box-shadow: black 4px 4px;
-    color: rgb(0, 2, 75);
+    box-shadow: var(--dark-blue) 4px 4px;
+    color: var(--dark-blue);
 }
 
 .project-card .description {
@@ -125,7 +145,7 @@ span.contact-info {
 
 .project-card .description h2 {
     font-size: 2em;
-    color: rgb(1, 1, 26);
+    color: var(--dark-blue);
     text-decoration: underline;
 }
 
