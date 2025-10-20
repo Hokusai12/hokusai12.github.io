@@ -9,7 +9,7 @@
 }
 
 :root {
-    --dark-blue: rgb(3, 5, 61);
+    --dark-blue: rgb(3, 5, 45);
     --cream: rgb(245, 250, 229);
 }
 
@@ -173,3 +173,4 @@ span.contact-info {
     display: flex;
     justify-content: space-around;
 }
+
